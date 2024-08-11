@@ -14,7 +14,7 @@ yargs(process.argv.slice(2))
   .usage('Usage: $0 <source file>')
   .command(
     '$0 <source file>',
-    'the default command',
+    'Anonymize a BPMN file',
     () => {},
     (args) => run(args),
   )
@@ -36,6 +36,3 @@ async function run({ sourcefile }) {
 
   await writeFile(moddle, sourcefile, rootElement);
 }
-
-
-
