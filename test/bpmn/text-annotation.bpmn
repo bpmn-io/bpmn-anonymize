@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:modeler="http://camunda.org/schema/modeler/1.0" id="Definitions_1tg24j7" targetNamespace="http://bpmn.io/schema/bpmn" exporter="Camunda Modeler" exporterVersion="5.26.0-rc.0" modeler:executionPlatform="Camunda Platform" modeler:executionPlatformVersion="7.21.0">
+  <bpmn:process id="Process_0luiu4f" isExecutable="true">
+    <bpmn:startEvent id="Event_1igj59e" />
+    <bpmn:textAnnotation id="TextAnnotation_1nixpo3">
+      <bpmn:text>foo</bpmn:text>
+    </bpmn:textAnnotation>
+    <bpmn:association id="Association_0jk0x4a" associationDirection="None" sourceRef="Event_1igj59e" targetRef="TextAnnotation_1nixpo3" />
+    <bpmn:textAnnotation id="TextAnnotation_1u4kpu1">
+      <bpmn:text>bar</bpmn:text>
+    </bpmn:textAnnotation>
+    <bpmn:association id="Association_040f04q" associationDirection="None" sourceRef="Event_1igj59e" targetRef="TextAnnotation_1u4kpu1" />
+  </bpmn:process>
+  <bpmndi:BPMNDiagram id="BPMNDiagram_1">
+    <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="Process_0luiu4f">
+      <bpmndi:BPMNShape id="Event_1igj59e_di" bpmnElement="Event_1igj59e">
+        <dc:Bounds x="272" y="182" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="Association_0jk0x4a_di" bpmnElement="Association_0jk0x4a">
+        <di:waypoint x="281" y="185" />
+        <di:waypoint x="219" y="80" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Association_040f04q_di" bpmnElement="Association_040f04q">
+        <di:waypoint x="302" y="187" />
+        <di:waypoint x="406" y="80" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="TextAnnotation_1nixpo3_di" bpmnElement="TextAnnotation_1nixpo3">
+        <dc:Bounds x="160" y="50" width="100" height="30" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="TextAnnotation_1u4kpu1_di" bpmnElement="TextAnnotation_1u4kpu1">
+        <dc:Bounds x="370" y="50" width="100" height="30" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>
